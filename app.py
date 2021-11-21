@@ -14,7 +14,10 @@ def hello_world():
 @app.route("/verify", methods=["POST"])
 def get_weather():
     if (request.form["state"] and request.form["city"]):
-        report = weather.get_forecast_data(request.form["city"], request.form["state"]) 
-        return jsonify(report)
+        try:
+            report = weather.get_forecast_data(request.form["city"], request.form["state"]) 
+            return jsonify(report)
+        except:
+            return "400"
     else:
-        return None
+        return "400"
