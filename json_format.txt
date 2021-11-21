@@ -1,0 +1,68 @@
+{
+    '@context': ['https://geojson.org/geojson-ld/geojson-context.jsonld', 
+                    {
+                        '@version': '1.1', 'wx': 'https://api.weather.gov/ontology#', 
+                        'geo': 'http://www.opengis.net/ont/geosparql#', 
+                        'unit': 'http://codes.wmo.int/common/unit/', 
+                        '@vocab': 'https://api.weather.gov/ontology#'
+                    }
+                ], 
+    'type': 'Feature', 
+    'geometry': {
+                    'type': 'Polygon',
+                    'coordinates': [
+                                    [
+                                        [-115.1727658, 36.1782906],
+                                        [-115.16865419999999, 36.156145599999995],
+                                        [-115.1412395, 36.159460599999996],
+                                        [-115.1453457, 36.181606099999996],
+                                        [-115.1727658, 36.1782906]
+                                    ]
+                                   ]
+                },
+    'properties': {
+                    'updated': '2021-11-20T20:57:51+00:00', 
+                    'units': 'us', 
+                    'forecastGenerator': 'BaselineForecastGenerator', 
+                    'generatedAt': '2021-11-20T22:24:17+00:00', 
+                    'updateTime': '2021-11-20T20:57:51+00:00', 
+                    'validTimes': '2021-11-20T14:00:00+00:00/P8DT6H', 
+                    'elevation': {'unitCode': 'wmoUnit:m', 'value': 620.8776}, 
+                    'periods': [{
+                                    'number': 1, 
+                                    'name': 'This Afternoon', 
+                                    'startTime': '2021-11-20T14:00:00-08:00', 
+                                    'endTime': '2021-11-20T18:00:00-08:00', 
+                                    'isDaytime': True,
+                                    'temperature': 73, 
+                                    'temperatureUnit': 'F', 
+                                    'temperatureTrend': 'falling', 
+                                    'windSpeed': '8 mph', 
+                                    'windDirection': 'NE', 
+                                    'icon': 'https://api.weather.gov/icons/land/day/sct?size=medium', 
+                                    'shortForecast': 'Mostly Sunny', 
+                                    'detailedForecast': 'Mostly sunny. High near 73, with temperatures falling to around 67 in the afternoon. Northeast wind around 8 mph.'
+                                }, 
+                                {
+                                    'number': 2, 
+                                    'name': 'Tonight', 
+                                    'startTime': '2021-11-20T18:00:00-08:00', 
+                                    'endTime': '2021-11-21T06:00:00-08:00', 
+                                    'isDaytime': False, 
+                                    'temperature': 51, 
+                                    'temperatureUnit': 'F', 
+                                    'temperatureTrend': None, 
+                                    'windSpeed': '6 to 13 mph', 
+                                    'windDirection': 'NNW', 
+                                    'icon': 'https://api.weather.gov/icons/land/night/few?size=medium', 
+                                    'shortForecast': 'Mostly Clear', 
+                                    'detailedForecast': 'Mostly clear, with a low around 51. North northwest wind 6 to 13 mph, with gusts as high as 18 mph.'
+                                }, 
+                                {'number': 3, 'name': 'Sunday', 'startTime': '2021-11-21T06:00:00-08:00', 'endTime': '2021-11-21T18:00:00-08:00', 'isDaytime': True, 'temperature': 69, 'temperatureUnit': 'F', 'temperatureTrend': 'falling', 'windSpeed': '7 to 12 mph', 'windDirection': 'N', 'icon': 'https://api.weather.gov/icons/land/day/skc?size=medium', 'shortForecast': 'Sunny', 'detailedForecast': 'Sunny. High near 69, with temperatures falling to around 64 in the afternoon. North wind 7 to 12 mph.'}, 
+                                {'number': 4, 'name': 'Sunday Night', 'startTime': '2021-11-21T18:00:00-08:00', 'endTime': '2021-11-22T06:00:00-08:00', 'isDaytime': False, 'temperature': 46, 'temperatureUnit': 'F', 'temperatureTrend': None, 'windSpeed': '5 to 8 mph', 'windDirection': 'NNW', 'icon': 'https://api.weather.gov/icons/land/night/skc?size=medium', 'shortForecast': 'Clear', 'detailedForecast': 'Clear, with a low around 46. North northwest wind 5 to 8 mph.'}, 
+                                {'number': 5, 'name': 'Monday', 'startTime': '2021-11-22T06:00:00-08:00', 'endTime': '2021-11-22T18:00:00-08:00', 'isDaytime': True, 'temperature': 69, 'temperatureUnit': 'F', 'temperatureTrend': None, 'windSpeed': '2 to 6 mph', 'windDirection': 'NNE', 'icon': 'https://api.weather.gov/icons/land/day/few?size=medium', 'shortForecast': 'Sunny', 'detailedForecast': 'Sunny, with a high near 69. North northeast wind 2 to 6 mph.'}, 
+                                {'number': 6, 'name': 'Monday Night', 'startTime': '2021-11-22T18:00:00-08:00', 'endTime': '2021-11-23T06:00:00-08:00', 'isDaytime': False, 'temperature': 51, 'temperatureUnit': 'F', 'temperatureTrend': None, 'windSpeed': '3 mph', 'windDirection': 'NW', 'icon': 'https://api.weather.gov/icons/land/night/sct?size=medium', 'shortForecast': 'Partly Cloudy', 'detailedForecast': 'Partly cloudy, with a low around 51.'}, 
+                                {'number': 7, 'name': 'Tuesday', 'startTime': '2021-11-23T06:00:00-08:00', 'endTime': '2021-11-23T18:00:00-08:00', 'isDaytime': True, 'temperature': 70, 'temperatureUnit': 'F', 'temperatureTrend': None, 'windSpeed': '3 to 10 mph', 'windDirection': 'S', 'icon': 'https://api.weather.gov/icons/land/day/bkn?size=medium', 'shortForecast': 'Partly Sunny', 'detailedForecast': 'Partly sunny, with a high near 70.'}, 
+                                {'number': 8, 'name': 'Tuesday Night', 'startTime': '2021-11-23T18:00:00-08:00', 'endTime': '2021-11-24T06:00:00-08:00', 'isDaytime': False, 'temperature': 47, 'temperatureUnit': 'F', 'temperatureTrend': None, 'windSpeed': '6 to 10 mph', 'windDirection': 'WNW', 'icon': 'https://api.weather.gov/icons/land/night/sct?size=medium', 'shortForecast': 'Partly Cloudy', 'detailedForecast': 'Partly cloudy, with a low around 47.'}, 
+                                {'number': 9, 'name': 'Wednesday', 'startTime': '2021-11-24T06:00:00-08:00', 'endTime': '2021-11-24T18:00:00-08:00', 'isDaytime': True, 'temperature': 66, 'temperatureUnit': 'F', 'temperatureTrend': None, 'windSpeed': '8 to 14 mph', 'windDirection': 'N', 'icon': 'https://api.weather.gov/icons/land/day/few?size=medium', 'shortForecast': 'Sunny', 'detailedForecast': 'Sunny, with a high near 66.'}, 
+                                {'number': 10, 'name': 'Wednesday Night', 'startTime': '2021-11-24T18:00:00-08:00', 'endTime': '2021-11-25T06:00:00-08:00', 'isDaytime': False, 'temperature': 43, 'temperatureUnit': 'F', 'temperatureTrend': None, 'windSpeed': '6 to 9 mph', 'windDirection': 'NNW', 'icon': 'https://api.weather.gov/icons/land/night/skc?size=medium', 'shortForecast': 'Clear', 'detailedForecast': 'Clear, with a low around 43.'}, {'number': 11, 'name': 'Thanksgiving Day', 'startTime': '2021-11-25T06:00:00-08:00', 'endTime': '2021-11-25T18:00:00-08:00', 'isDaytime': True, 'temperature': 65, 'temperatureUnit': 'F', 'temperatureTrend': None, 'windSpeed': '7 mph', 'windDirection': 'N', 'icon': 'https://api.weather.gov/icons/land/day/few?size=medium', 'shortForecast': 'Sunny', 'detailedForecast': 'Sunny, with a high near 65.'}, {'number': 12, 'name': 'Thursday Night', 'startTime': '2021-11-25T18:00:00-08:00', 'endTime': '2021-11-26T06:00:00-08:00', 'isDaytime': False, 'temperature': 45, 'temperatureUnit': 'F', 'temperatureTrend': None, 'windSpeed': '3 mph', 'windDirection': 'NNW', 'icon': 'httpwith a low around 45.'}, {'number': 13, 'name': 'Friday', 'startTime': '2021-11-26T06:00:00-08:00', 'endTime': '2021-11-26T18:00:00-08:00', 'isDaytime': True, 'temperature': 67, 'temperatureUnit': 'F', 'temperatureTrend': None, 'windSpeed': '6 mph', 'windDirection': 'NNE', 'icon': 'https://api.weather.gov/icons/land/day/few?size=medium', 'shortForecast': 'Sunny', 'detailedForecast': 'Sunny, with a high near 67.'}, {'number': 14, 'name': 'Friday Night', 'startTime': '2021-11-26T18:00:00-08:00', 'endTime': '2021-11-27T06:00:00-08:00', 'isDaytime': False, 'temperature': 47, 'temperatureUnit': 'F', 'temperatureTrend': None, 'windSpeed': '3 mph', 'windDirection': 'NNW', 'icon': 'https://api.weather.gov/icons/land/night/few?size=medium', 'shortForecast': 'Mostly Clear', 'detailedForecast': 'Mostly clear, with a low around 47.'}]}}
